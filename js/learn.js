@@ -16,18 +16,16 @@
 
 // <=============================================================================>
 
-
 // Напишіть код, який перевіряє, чи можна отримати водійські права.
 // Користувач може отримати водійські права, якщо йому виповнилося
 // 18 років і він має право на працевлаштування.
-
 
 // const age = 12;
 // const rights = true;
 // let result = false;
 // if (age >= 18 && rights) {
 //     result = true;
-    
+
 // }
 // console.log(result);
 
@@ -99,7 +97,7 @@
 // for (let i = max; i > min; i--) {
 //     if (i % 2 === 0) {
 //         console.log(`Парне ${i}`);
-        
+
 //     } else {
 //         console.log(`не парне ${i}`);
 //     }
@@ -141,7 +139,6 @@
 
 // <=============================================================================>
 
-
 // Напиши функцію calculateTotal(number), яка приймає ціле число
 // (параметр number) і повертає суму всіх цілих чисел від одиниці
 //  і до цього числа.Наприклад, якщо number дорівнює 3, то сума - це 1 + 2 + 3, тобто 6.
@@ -170,7 +167,7 @@
 // let total = 0;
 // for (let i = 0; i < order.length; i+= 1) {
 // total = total + order[i]
-    
+
 // }
 // console.log(total);
 
@@ -201,7 +198,7 @@
 // Виклик функції createArrayOfNumbers(29, 34) повертає [29, 30, 31, 32, 33, 34]
 // Виклик функції createArrayOfNumbers() з випадковими min і max повертає правильний масив
 // В циклі for використовувався метод push
-    
+
 // const min = 10;
 // const max = 17;
 // let result = 0
@@ -255,13 +252,12 @@
 // const numbers = [12, 24, 8, 41, 76];
 // const value = 38;
 // const filteredNumbers = [];
- 
+
 // for (const variable of numbers) {
 //     if (variable > value) {
 //         filteredNumbers.push(variable)
 //     }
 // }
-
 
 // <=============================================================================>
 
@@ -282,7 +278,6 @@
 
 // const order = [12, 85, 37, 4];
 // let total = 0;
- 
 
 //   for (const variable of order){
 //    total = variable + total
@@ -377,7 +372,7 @@
 //     followers: 5603,
 //     views: 4827,
 //       likes: 1308,
-    
+
 //   },
 // };
 
@@ -439,9 +434,8 @@
 //       keys.push(key);
 //       values.push(apartment[key]);
 //     }
-    
-// }
 
+// }
 
 // <=============================================================================>
 
@@ -454,7 +448,6 @@
 // Виклик countProps({ name: "Mango", age: 2 }) повертає 2
 // Виклик countProps({ mail: "poly@mail.com", isOnline: true, score: 500 }) повертає 3
 // Функція підраховує тільки власні властивості об'єкта
-
 
 // function countProps(object) {
 //   let propCount = 0;
@@ -511,10 +504,8 @@
 //   // Change code below this line
 //   let propCount = 0;
 
- 
-
 //   return propCount;
-  // Change code above this line
+// Change code above this line
 // }
 
 // <=============================================================================>
@@ -531,13 +522,12 @@
 
 // function countTotalSalary(salaries) {
 //   let totalSalary = 0;
-  
+
 //   for (const key of Object.values(salaries)) {
 // totalSalary+= key
-    
+
 //   }
 
-  
 //   return totalSalary;
 // }
 // countTotalSalary({ mango: 100, poly: 150, alfred: 80 });
@@ -563,8 +553,8 @@
 
 // <=============================================================================>
 
-// Напиши функцію getProductPrice(productName), яка приймає один параметр productName - назва продукту. 
-// Функція шукає об'єкт продукту з таким ім'ям (властивість name) в масиві products 
+// Напиши функцію getProductPrice(productName), яка приймає один параметр productName - назва продукту.
+// Функція шукає об'єкт продукту з таким ім'ям (властивість name) в масиві products
 // і повертає його ціну (властивість price). Якщо продукт з такою назвою не знайдений,
 //  функція повинна повертати null.
 
@@ -613,16 +603,14 @@
 // console.log(getAllPropValues("price"));
 // console.log(getAllPropValues("category"));
 
-
 // <=============================================================================>
-
 
 // function formatMessage(message, maxLength) {
 //   let result;
 //   // Change code below this line
 // if (message.length <= maxLength) {
-//   result = message  
-// }else 
+//   result = message
+// }else
 //   result = message.slice(0, maxLength) + '...'
 //   /// Change code above this line
 //   return result;
@@ -746,16 +734,15 @@
 //   // Change code above this line
 // };
 
-
 // <=============================================================================>
 
 // const bookShelf = {
 //   books: ["The last kingdom", "Haze", "The guardian of dreams"],
 //   updateBook(oldName, newName) {
-//    
+//
 //     const bookIndex = this.books.indexOf(oldName);
 //     this.books.splice(bookIndex, 1, newName)
-//     
+//
 //   },
 // };
 
@@ -771,176 +758,521 @@
 //   },
 // };
 
+// <=============================================================================>
+
+// const pizzaPalace = {
+//   pizzas: ["Ultracheese", "Smoked", "Four meats"],
+//   order(pizzaName,onSuccess,onError) {
+//     for (const pizza of this.pizzas){
+//       if(pizza === pizzaName){
+//        return onSuccess(pizzaName)
+
+//       }
+
+//     }
+//     return onError(pizzaName)
+//   },
+// };
+// Change code above this line
+
+// Callback for onSuccess
+// function makePizza(pizzaName) {
+//   return `Your order is accepted. Cooking pizza ${pizzaName}.`;
+// }
+
+// // Callback for onError
+// function onOrderError(error) {
+//   return `Error! ${error}`;
+// }
+
+// // Method calls with callbacks
+// pizzaPalace.order("Smoked", makePizza, onOrderError);
+// pizzaPalace.order("Four meats", makePizza, onOrderError);
+// pizzaPalace.order("Big Mike", makePizza, onOrderError);
+// pizzaPalace.order("Vienna", makePizza, onOrderError);
+
+// <=============================================================================>
+// const arr1 =[1,2];
+// const arr2 = [3,4];
+// const arr3 = [5,6];
+// const totalArr = [...arr1, ...arr2, ...arr3]
+
+// arr1.splice(0,1)
+
+// console.log(arr1);
+// console.log(totalArr);
+// <=============================================================================>
+// const scores = [61, 19, 74, 35, 92, 56];
+// const ascendingScores = scores.sort();
+
+// console.log(...scores); // [61, 19, 74, 35, 92, 56]
+// console.log(ascendingScores); // [19, 35, 56, 61, 74, 92]
+// const scores = [1, 22, 3, 44, 5, 66];
+// const ascendingScores = [...scores].sort();
+
+// console.log('scores', scores);
+// console.log('ascendingScores', ascendingScores);
+
+// <=============================================================================>
+// function changeEven(...numbers, value) {
+//   // Change code below this line
+//   const newArr = [];
+//   for (let i = 0; i < numbers.length; i += 1) {
+//     if (numbers[i] % 2 === 0) {
+//       newArr.push(numbers[i] + value);
+//     } else {
+//       newArr.push(numbers[i]);
+//     }
+//   }
+//   return newArr;
+//   // Change code above this line
+// }
+// function changeEven(numbers, value) {
+//   const newArr = [];
+//  numbers.forEach(number => {
+//   if (number % 2 === 0) {
+//     number += value
+//   }
+//   newArr.push(number)
+  
+//  })
+// }
+// changeEven([1, 2, 3, 4, 5], 10);
+// // <=============================================================================>
+// const planets = ["Earth", "Mars", "Venus", "Jupiter"];
+
+// const planetsLengths = planets.map((element, index, array) => element.length)
+
+// const planetsLengths = []
+// planets.map((element, idx) => planetsLengths.push(idx + 1))
+// console.log(planetsLengths);
+// <=============================================================================>
+// const users = [
+//   {
+//     name: "Moore Hensley",
+//     email: "moorehensley@indexia.com",
+//     eyeColor: "blue",
+//     friends: ["Sharron Pace"],
+//     isActive: false,
+//     balance: 2811,
+//     gender: "male",
+//     age: 37
+//   },
+//   {
+//     name: "Sharlene Bush",
+//     email: "sharlenebush@tubesys.com",
+//     eyeColor: "blue",
+//     friends: ["Briana Decker", "Sharron Pace"],
+//     isActive: true,
+//     balance: 3821,
+//     gender: "female",
+//     age: 34
+//   },
+//   {
+//     name: "Ross Vazquez",
+//     email: "rossvazquez@xinware.com",
+//     eyeColor: "green",
+//     friends: ["Marilyn Mcintosh", "Padilla Garrison", "Naomi Buckner"],
+//     isActive: false,
+//     balance: 3793,
+//     gender: "male",
+//     age: 24
+//   },
+//   {
+//     name: "Elma Head",
+//     email: "elmahead@omatom.com",
+//     eyeColor: "green",
+//     friends: ["Goldie Gentry", "Aisha Tran"],
+//     isActive: true,
+//     balance: 2278,
+//     gender: "female",
+//     age: 21
+//   },
+//   {
+//     name: "Carey Barr",
+//     email: "careybarr@nurali.com",
+//     eyeColor: "blue",
+//     friends: ["Jordan Sampson", "Eddie Strong"],
+//     isActive: true,
+//     balance: 3951,
+//     gender: "male",
+//     age: 27
+//   },
+//   {
+//     name: "Blackburn Dotson",
+//     email: "blackburndotson@furnigeer.com",
+//     eyeColor: "brown",
+//     friends: ["Jacklyn Lucas", "Linda Chapman"],
+//     isActive: false,
+//     balance: 1498,
+//     gender: "male",
+//     age: 38
+//   },
+//   {
+//     name: "Sheree Anthony",
+//     email: "shereeanthony@kog.com",
+//     eyeColor: "brown",
+//     friends: ["Goldie Gentry", "Briana Decker"],
+//     isActive: true,
+//     balance: 2764,
+//     gender: "female",
+//     age: 39
+//   }
+// ]
+// const students = [
+//   { name: "Манго", courses: ["математика", "фізика"] },
+//   { name: "Полі", courses: ["інформатика", "математика"] },
+//   { name: "Ківі", courses: ["фізика", "біологія"] },
+// ];
+
+// const allCourses = students.flatMap(student => student.courses);
+// // ['математика', 'фізика', 'інформатика', 'математика', 'фізика', 'біологія'];
+
+// const getFriends = (users) => {
+//   const usersFriends = users.flatMap(user => user.friends);
+//   const uniqueFriends = usersFriends.filter((friend, index, arr) => arr.indexOf(friend) === index);
+//   return uniqueFriends;
+// };
+// console.log(getFriends(users));
+// const getUsersWithFriend = (users, friendName) => {
+//   const filteredUsers = users.filter(user => user.friends.includes(friendName));
+//   return filteredUsers;
+// };
+// console.log(getUsersWithFriend(users, "Sharron Pace"));
+
+// const getUsersWithAge = (users, minAge, maxAge) => {
+//   return users.filter(elem => elem.age > minAge && elem.age < maxAge)
+//   };
+//   console.log(getUsersWithAge(users,20,30));
+// <=============================================================================>
+// const players = {
+//   mango: 1270,
+//   poly: 468,
+//   ajax: 710,
+//   kiwi: 244
+// };
+// const playtimes = Object.values(players);
+// // Change code below this line
+
+// const totalPlayTime = playtimes.reduce((total, numb) => total += numb );
+
+// // Change code above this line
+// const averagePlayTime = totalPlayTime / playtimes.length;
+// console.log(totalPlayTime);
+// <=============================================================================>
+// const players = [
+//   { name: "Mango", playtime: 1270, gamesPlayed: 4 },
+//   { name: "Poly", playtime: 469, gamesPlayed: 2 },
+//   { name: "Ajax", playtime: 690, gamesPlayed: 3 },
+//   { name: "Kiwi", playtime: 241, gamesPlayed: 1 },
+// ];
+// // Change code below this line
+
+// const totalAveragePlaytimePerGame = players.reduce((total, elem) => total +=(elem.playtime / elem.gamesPlayed),0);
+// console.log(totalAveragePlaytimePerGame);
+// <=============================================================================>
+// Change code below this line
+// const users = [
+//   {
+//     name: "Moore Hensley",
+//     email: "moorehensley@indexia.com",
+//     eyeColor: "blue",
+//     friends: ["Sharron Pace"],
+//     isActive: false,
+//     balance: 2811,
+//     gender: "male"
+//   },
+//   {
+//     name: "Sharlene Bush",
+//     email: "sharlenebush@tubesys.com",
+//     eyeColor: "blue",
+//     friends: ["Briana Decker", "Sharron Pace"],
+//     isActive: true,
+//     balance: 3821,
+//     gender: "female"
+//   },
+//   {
+//     name: "Ross Vazquez",
+//     email: "rossvazquez@xinware.com",
+//     eyeColor: "green",
+//     friends: ["Marilyn Mcintosh", "Padilla Garrison", "Naomi Buckner"],
+//     isActive: false,
+//     balance: 3793,
+//     gender: "male"
+//   },
+//   {
+//     name: "Elma Head",
+//     email: "elmahead@omatom.com",
+//     eyeColor: "green",
+//     friends: ["Goldie Gentry", "Aisha Tran"],
+//     isActive: true,
+//     balance: 2278,
+//     gender: "female"
+//   },
+//   {
+//     name: "Carey Barr",
+//     email: "careybarr@nurali.com",
+//     eyeColor: "blue",
+//     friends: ["Jordan Sampson", "Eddie Strong"],
+//     isActive: true,
+//     balance: 3951,
+//     gender: "male"
+//   },
+//   {
+//     name: "Blackburn Dotson",
+//     email: "blackburndotson@furnigeer.com",
+//     eyeColor: "brown",
+//     friends: ["Jacklyn Lucas", "Linda Chapman"],
+//     isActive: false,
+//     balance: 1498,
+//     gender: "male"
+//   },
+//   {
+//     name: "Sheree Anthony",
+//     email: "shereeanthony@kog.com",
+//     eyeColor: "brown",
+//     friends: ["Goldie Gentry", "Briana Decker"],
+//     isActive: true,
+//     balance: 2764,
+//     gender: "female"
+//   }
+// ]
+
+// const getTotalFriendCount = users => users.reduce((total,{friends}) => total += friends.length , 0)
+// console.log(getTotalFriendCount(users));
+// <=============================================================================>
+// const releaseDates = [2016, 1967, 2008, 1984, 1973, 2012, 1997];
+// const authors = [
+//   "Tanith Lee",
+//   "Bernard Cornwell",
+//   "Robert Sheckley",
+//   "Fyodor Dostoevsky",
+// ];
+// // Change code below this line
+
+
+// const ascendingReleaseDates = [...releaseDates].sort();
+
+// const alphabeticalAuthors = [...authors].sort()
+// console.log(releaseDates);
+// <=============================================================================>
+// const books = [
+//   {
+//     title: "The Last Kingdom",
+//     author: "Bernard Cornwell",
+//     rating: 8.38,
+//   },
+//   {
+//     title: "Beside Still Waters",
+//     author: "Robert Sheckley",
+//     rating: 8.51,
+//   },
+//   {
+//     title: "The Dream of a Ridiculous Man",
+//     author: "Fyodor Dostoevsky",
+//     rating: 7.75,
+//   },
+//   { title: "Redder Than Blood", author: "Tanith Lee", rating: 7.94 },
+//   { title: "Enemy of God", author: "Bernard Cornwell", rating: 8.67 },
+// ];
+// // Change code below this line
+
+// const sortedByAuthorName = [...books].sort((first,second) => first.author.localeCompare(second.author));
+
+// const sortedByReversedAuthorName = [...books].sort((first,second) => second.author.localeCompare(first.author));
+
+// // const sortedByAscendingRating = [...books].sort((first,second) => first.rating - second.rating);
+
+// // const sortedByDescentingRating = [...books].sort((first,second) => second.rating - first.rating);
+
+// console.log(sortedByAuthorName);
+// console.log(sortedByReversedAuthorName);
+// // console.log(sortedByAscendingRating);
+// // console.log(sortedByDescentingRating);
+// <=============================================================================>
+// const books = [
+//   {
+//     title: "The Last Kingdom",
+//     author: "Bernard Cornwell",
+//     rating: 8.38,
+//   },
+//   {
+//     title: "Beside Still Waters",
+//     author: "Robert Sheckley",
+//     rating: 8.51,
+//   },
+//   {
+//     title: "The Dream of a Ridiculous Man",
+//     author: "Fyodor Dostoevsky",
+//     rating: 7.75,
+//   },
+//   { title: "Redder Than Blood", author: "Tanith Lee", rating: 7.94 },
+//   {
+//     title: "The Dreams in the Witch House",
+//     author: "Howard Lovecraft",
+//     rating: 8.67,
+//   },
+// ];
+// const MIN_BOOK_RATING = 8;
+// // Change code below this line
+
+// const names = [...books]
+//   .sort((a,b) => a.author.localeCompare(b.author))
+//   .filter(({rating}) => rating > MIN_BOOK_RATING)
+//   .map(elem => elem.author)
+  
+// console.log(names);
+// <=============================================================================>
+// Доповни функцію getTotalBalanceByGender(users, gender) таким чином,
+// щоб вона повертала загальний баланс користувачів (властивість balance),
+// стать яких (властивість gender) збігається зі значенням параметра gender.
+
+// Оголошена змінна getTotalBalanceByGender
+// Змінній getTotalBalanceByGender присвоєна стрілочна функція з параметрами (users, gender)
+// У тілі функції використовується ланцюжок методів в правильному порядку
+// Значення параметра users не змінюється
+// Якщо значення параметра gender - це рядок "male", функція повертає число 12053
+// Якщо значення параметра gender - це рядок "female", функція повертає число 8863
+// Виклик функції з випадковими, але валідними аргументами, повертає правильне значення
+
+const users = [
+  {
+    name: "Moore Hensley",
+    email: "moorehensley@indexia.com",
+    eyeColor: "blue",
+    friends: ["Sharron Pace"],
+    isActive: false,
+    balance: 2811,
+    gender: "male"
+  },
+  {
+    name: "Sharlene Bush",
+    email: "sharlenebush@tubesys.com",
+    eyeColor: "blue",
+    friends: ["Briana Decker", "Sharron Pace"],
+    isActive: true,
+    balance: 3821,
+    gender: "female"
+  },
+  {
+    name: "Ross Vazquez",
+    email: "rossvazquez@xinware.com",
+    eyeColor: "green",
+    friends: ["Marilyn Mcintosh", "Padilla Garrison", "Naomi Buckner"],
+    isActive: false,
+    balance: 3793,
+    gender: "male"
+  },
+  {
+    name: "Elma Head",
+    email: "elmahead@omatom.com",
+    eyeColor: "green",
+    friends: ["Goldie Gentry", "Aisha Tran"],
+    isActive: true,
+    balance: 2278,
+    gender: "female"
+  },
+  {
+    name: "Carey Barr",
+    email: "careybarr@nurali.com",
+    eyeColor: "blue",
+    friends: ["Jordan Sampson", "Eddie Strong", "Adrian Cross"],
+    isActive: true,
+    balance: 3951,
+    gender: "male"
+  },
+  {
+    name: "Blackburn Dotson",
+    email: "blackburndotson@furnigeer.com",
+    eyeColor: "brown",
+    friends: ["Jacklyn Lucas", "Linda Chapman", "Adrian Cross", "Solomon Fokes"],
+    isActive: false,
+    balance: 1498,
+    gender: "male"
+  },
+  {
+    name: "Sheree Anthony",
+    email: "shereeanthony@kog.com",
+    eyeColor: "brown",
+    friends: ["Goldie Gentry", "Briana Decker"],
+    isActive: true,
+    balance: 2764,
+    gender: "female"
+  }
+]
+const getTotalBalanceByGender = (users, gender) => [...users]
+  .filter(elem => elem.gender === gender)
+  .reduce((total,elem) => total += elem.balance,0)
+ 
+  console.log(getTotalBalanceByGender(users,'male'));
+// const male =[];
+// const female = [];
+// users.forEach(elem => elem.gender.includes('female') ? male.push(elem) :  female.push(elem));
+// const totalBalanceMale = male.reduce((total,elem) => total += elem.balance,0)
+// const totalBalanceFemale = female.reduce((total,elem) => total += elem.balance,0)
+
+// console.log(female);
+// console.log(male);
+// console.log(totalBalanceMale);
+// console.log(totalBalanceFemale);
+// <=============================================================================>
 
 // <=============================================================================>
 
-
+// <=============================================================================>
 
 // <=============================================================================>
 
-
+// <=============================================================================>
 
 // <=============================================================================>
 
-
+// <=============================================================================>
 
 // <=============================================================================>
 
-
+// <=============================================================================>
 
 // <=============================================================================>
 
-
+// <=============================================================================>
 
 // <=============================================================================>
 
-
+// <=============================================================================>
 
 // <=============================================================================>
 
-
+// <=============================================================================>
 
 // <=============================================================================>
 
-
+// <=============================================================================>
 
 // <=============================================================================>
 
-
+// <=============================================================================>
 
 // <=============================================================================>
 
-
+// <=============================================================================>
 
 // <=============================================================================>
 
-
+// <=============================================================================>
 
 // <=============================================================================>
 
-
+// <=============================================================================>
 
 // <=============================================================================>
 
-
+// <=============================================================================>
 
 // <=============================================================================>
 
-
-
 // <=============================================================================>
 
-
-
 // <=============================================================================>
-
-
-
-// <=============================================================================>
-
-
-
-// <=============================================================================>
-
-
-
-// <=============================================================================>
-
-
-
-// <=============================================================================>
-
-
-
-// <=============================================================================>
-
-
-
-// <=============================================================================>
-
-
-
-// <=============================================================================>
-
-
-
-// <=============================================================================>
-
-
-
-// <=============================================================================>
-
-
-
-// <=============================================================================>
-
-
-
-// <=============================================================================>
-
-
-
-// <=============================================================================>
-
-
-
-// <=============================================================================>
-
-
-
-// <=============================================================================>
-
-
-
-// <=============================================================================>
-
-
-
-// <=============================================================================>
-
-
-
-// <=============================================================================>
-
-
-
-// <=============================================================================>
-
-
-
-// <=============================================================================>
-
-
-
-// <=============================================================================>
-
-
-
-// <=============================================================================>
-
-
-
-// <=============================================================================>
-
-
-
-// <=============================================================================>
-
-
-
-// <=============================================================================>
-
-
-
-// <=============================================================================>
-
-
-// <=============================================================================>
-
-
-
-// <=============================================================================>
-
-
 
 // <=============================================================================>
