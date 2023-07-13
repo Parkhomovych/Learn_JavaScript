@@ -834,7 +834,7 @@
 //     number += value
 //   }
 //   newArr.push(number)
-  
+
 //  })
 // }
 // changeEven([1, 2, 3, 4, 5], 10);
@@ -1050,7 +1050,6 @@
 // ];
 // // Change code below this line
 
-
 // const ascendingReleaseDates = [...releaseDates].sort();
 
 // const alphabeticalAuthors = [...authors].sort()
@@ -1120,7 +1119,7 @@
 //   .sort((a,b) => a.author.localeCompare(b.author))
 //   .filter(({rating}) => rating > MIN_BOOK_RATING)
 //   .map(elem => elem.author)
-  
+
 // console.log(names);
 // <=============================================================================>
 // Доповни функцію getTotalBalanceByGender(users, gender) таким чином,
@@ -1135,77 +1134,77 @@
 // Якщо значення параметра gender - це рядок "female", функція повертає число 8863
 // Виклик функції з випадковими, але валідними аргументами, повертає правильне значення
 
-const users = [
-  {
-    name: "Moore Hensley",
-    email: "moorehensley@indexia.com",
-    eyeColor: "blue",
-    friends: ["Sharron Pace"],
-    isActive: false,
-    balance: 2811,
-    gender: "male"
-  },
-  {
-    name: "Sharlene Bush",
-    email: "sharlenebush@tubesys.com",
-    eyeColor: "blue",
-    friends: ["Briana Decker", "Sharron Pace"],
-    isActive: true,
-    balance: 3821,
-    gender: "female"
-  },
-  {
-    name: "Ross Vazquez",
-    email: "rossvazquez@xinware.com",
-    eyeColor: "green",
-    friends: ["Marilyn Mcintosh", "Padilla Garrison", "Naomi Buckner"],
-    isActive: false,
-    balance: 3793,
-    gender: "male"
-  },
-  {
-    name: "Elma Head",
-    email: "elmahead@omatom.com",
-    eyeColor: "green",
-    friends: ["Goldie Gentry", "Aisha Tran"],
-    isActive: true,
-    balance: 2278,
-    gender: "female"
-  },
-  {
-    name: "Carey Barr",
-    email: "careybarr@nurali.com",
-    eyeColor: "blue",
-    friends: ["Jordan Sampson", "Eddie Strong", "Adrian Cross"],
-    isActive: true,
-    balance: 3951,
-    gender: "male"
-  },
-  {
-    name: "Blackburn Dotson",
-    email: "blackburndotson@furnigeer.com",
-    eyeColor: "brown",
-    friends: ["Jacklyn Lucas", "Linda Chapman", "Adrian Cross", "Solomon Fokes"],
-    isActive: false,
-    balance: 1498,
-    gender: "male"
-  },
-  {
-    name: "Sheree Anthony",
-    email: "shereeanthony@kog.com",
-    eyeColor: "brown",
-    friends: ["Goldie Gentry", "Briana Decker"],
-    isActive: true,
-    balance: 2764,
-    gender: "female"
-  }
-]
-const getTotalBalanceByGender = (users, gender) => [...users]
-  .filter(elem => elem.gender === gender)
-  .reduce((total,elem) => total += elem.balance,0)
- 
-  console.log(getTotalBalanceByGender(users,'male'));
-// const male =[];
+// const users = [
+//   {
+//     name: "Moore Hensley",
+//     email: "moorehensley@indexia.com",
+//     eyeColor: "blue",
+//     friends: ["Sharron Pace"],
+//     isActive: false,
+//     balance: 2811,
+//     gender: "male"
+//   },
+//   {
+//     name: "Sharlene Bush",
+//     email: "sharlenebush@tubesys.com",
+//     eyeColor: "blue",
+//     friends: ["Briana Decker", "Sharron Pace"],
+//     isActive: true,
+//     balance: 3821,
+//     gender: "female"
+//   },
+//   {
+//     name: "Ross Vazquez",
+//     email: "rossvazquez@xinware.com",
+//     eyeColor: "green",
+//     friends: ["Marilyn Mcintosh", "Padilla Garrison", "Naomi Buckner"],
+//     isActive: false,
+//     balance: 3793,
+//     gender: "male"
+//   },
+//   {
+//     name: "Elma Head",
+//     email: "elmahead@omatom.com",
+//     eyeColor: "green",
+//     friends: ["Goldie Gentry", "Aisha Tran"],
+//     isActive: true,
+//     balance: 2278,
+//     gender: "female"
+//   },
+//   {
+//     name: "Carey Barr",
+//     email: "careybarr@nurali.com",
+//     eyeColor: "blue",
+//     friends: ["Jordan Sampson", "Eddie Strong", "Adrian Cross"],
+//     isActive: true,
+//     balance: 3951,
+//     gender: "male"
+//   },
+//   {
+//     name: "Blackburn Dotson",
+//     email: "blackburndotson@furnigeer.com",
+//     eyeColor: "brown",
+//     friends: ["Jacklyn Lucas", "Linda Chapman", "Adrian Cross", "Solomon Fokes"],
+//     isActive: false,
+//     balance: 1498,
+//     gender: "male"
+//   },
+//   {
+//     name: "Sheree Anthony",
+//     email: "shereeanthony@kog.com",
+//     eyeColor: "brown",
+//     friends: ["Goldie Gentry", "Briana Decker"],
+//     isActive: true,
+//     balance: 2764,
+//     gender: "female"
+//   }
+// ]
+// const getTotalBalanceByGender = (users, gender) => [...users]
+//   .filter(elem => elem.gender === gender)
+//   .reduce((total,elem) => total += elem.balance,0)
+
+//   console.log(getTotalBalanceByGender(users,'male'));
+// // const male =[];
 // const female = [];
 // users.forEach(elem => elem.gender.includes('female') ? male.push(elem) :  female.push(elem));
 // const totalBalanceMale = male.reduce((total,elem) => total += elem.balance,0)
@@ -1216,15 +1215,51 @@ const getTotalBalanceByGender = (users, gender) => [...users]
 // console.log(totalBalanceMale);
 // console.log(totalBalanceFemale);
 // <=============================================================================>
+// let a = 10
+// let b =[]
+// if (a > 5) {
+//   let a = 5
+//   a = 20
+//   console.log(b);
+//   let b = a + 10
+// }
 
 // <=============================================================================>
+// function qwer (number){
+// let total = 0;
+// for(let i = 0; i < number.length; i +=1 ){
+//     total = total + number[i];
+// }
+// return total
+// }
+// console.log("total",qwer([12,85,37,4]));
 
 // <=============================================================================>
-
+// const number = [12,85,37,4];
+// let total = 0;
+// for(let i = 0; i < number.length; i +=1 ){
+//     total = total + number[i];
+// }
+// console.log(total);
 // <=============================================================================>
+// function nextInLine(arr, item) {
+//     arr.push(item);
+//     return arr.shift();
+// }
+// let testArr = [1, 2, 3, 4, 5];
 
+// console.log(nextInLine([], 1)); // Виведе: 1
+// console.log(nextInLine([2], 1)); // Виведе: 2
+// console.log(nextInLine([5,6,7,8,9], 1)); // Виведе: 5
+// console.log(nextInLine(testArr, 10)); // Виведе: 10
+// console.log(testArr[4]); // Виведе: 10
 // <=============================================================================>
-
+// function nextInLine(arr, item) {
+//     if (arr.length === 0) {
+//       return item;
+//     }
+//     return arr.push(item) && arr.shift();
+//   }
 // <=============================================================================>
 
 // <=============================================================================>
