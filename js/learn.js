@@ -1262,18 +1262,100 @@
 //   }
 // <=============================================================================>
 
+// Напишіть функцію getTotalBoysYears() яка порахує загальний вік хлопців.
+
+// const friends = [
+//     { passport: '03005988', name: 'Joseph Francis Tribbiani Jr', age: 32, sex: 'm' },
+//     { passport: '03005989', name: 'Chandler Muriel Bing', age: 33, sex: 'm' },
+//     { passport: '03005990', name: 'Ross Eustace Geller', age: 33, sex: 'm' },
+//     { passport: '03005991', name: 'Rachel Karen Green', age: 31, sex: 'f' },
+//     { passport: '03005992', name: 'Monica Geller', age: 31, sex: 'f' },
+//     { passport: '03005993', name: 'Phoebe Buffay', age: 34, sex: 'f' }
+// ]
+
+// const totalAge = friends
+// .filter(elem => elem.sex === 'm')
+// .reduce((acc,elem) => acc + elem.age,0 )
+// console.log(totalAge);
 // <=============================================================================>
+// Напишіть функцію getGirlsPassports() яка поверне масив номерів паспортів дівчат.
+
+// const friends = [
+//     { passport: '03005988', name: 'Joseph Francis Tribbiani Jr', age: 32, sex: 'm' },
+//     { passport: '03005989', name: 'Chandler Muriel Bing', age: 33, sex: 'm' },
+//     { passport: '03005990', name: 'Ross Eustace Geller', age: 33, sex: 'm' },
+//     { passport: '03005991', name: 'Rachel Karen Green', age: 31, sex: 'f' },
+//     { passport: '03005992', name: 'Monica Geller', age: 31, sex: 'f' },
+//     { passport: '03005993', name: 'Phoebe Buffay', age: 34, sex: 'f' }
+// ]
+// const grilPasport = friends
+// .filter(elem => elem.sex === 'f')
+// .map(elem => elem.passport)
+// console.log(grilPasport);
+// <=============================================================================>
+// Є об'єкт і функція для підрахунку суми чисел.
+// Виведіть у консоль результат виконання функції, якщо a = 3, b = 5.
+
+// var obj = { 
+//     num: 2 
+// };
+
+// function add(a, b){
+//   return this.num + a + b;
+// }
+// console.log(add.call(obj,3,5));
+// console.log(add.apply(obj,[3,5]));
+// const qwer = add.bind(obj,3,5)
+// console.log(qwer());
 
 // <=============================================================================>
-
+// Напишіть програму, яка отримає від користувача
+//число (кількість хвилин) і виведе у консоль
+//рядок у форматі годин і хвилин
+//70 === 01:10
+// const userValue = prompt("введіть хвилини");
+// let number = 0;
+// const hour = 60;
+// if (Number(userValue)) {
+//   number += userValue;
+// }
+// const hours = Math.floor(number / 60);
+// const min = number % hour;
+// const result = `${hours.toString().padStart(2, "0")}:${min
+//   .toString()
+//   .padStart(2, "0")}`;
+// console.log(result);
 // <=============================================================================>
+// const numbers = [1, 2, 3, 4, 5];
+// const arr = numbers.push(1,2,34,)
 
+// console.log(numbers.length);
+// console.log(arr);
 // <=============================================================================>
+// Напишіть дві функції:
+// letMeSeeYourName(callback) - запитує імя користувача,
+// через prompt і викликає колбек функцію (callback)
+// greet(name) - колбек , який приймає імя і логінує в
+// консоль рядок  "Привіт" + імя
 
+// function letMeSeeYourName(callback) {
+//    const takeName = prompt('дай імʼя')
+//     callback(takeName)
+// }
+// function foo (yourName){
+//   return  console.log(`Привіт ${yourName}`);
+// }
+// letMeSeeYourName(foo)
 // <=============================================================================>
+const names = ['vlad par', 'vtalik par', 'pasha par'];
 
-// <=============================================================================>
+const capitalizedNames = names.map(fullName => {
+  const words = fullName.split(' '); // Розбиваємо рядок на окремі слова
+  const capitalizedWords = words.map(word => word.charAt(0).toUpperCase() + word.slice(1)); // Перетворюємо кожне слово у великі літери
+  return capitalizedWords.join(' '); // Об'єднуємо слова знову у рядок
+});
 
+console.log(capitalizedNames);
 // <=============================================================================>
 
 // <=============================================================================>
