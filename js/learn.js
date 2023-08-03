@@ -1296,8 +1296,8 @@
 // Є об'єкт і функція для підрахунку суми чисел.
 // Виведіть у консоль результат виконання функції, якщо a = 3, b = 5.
 
-// var obj = { 
-//     num: 2 
+// var obj = {
+//     num: 2
 // };
 
 // function add(a, b){
@@ -1347,19 +1347,61 @@
 // }
 // letMeSeeYourName(foo)
 // <=============================================================================>
-const names = ['vlad par', 'vtalik par', 'pasha par'];
+// const names = ['vlad par', 'vtalik par', 'pasha par'];
 
-const capitalizedNames = names.map(fullName => {
-  const words = fullName.split(' '); // Розбиваємо рядок на окремі слова
-  const capitalizedWords = words.map(word => word.charAt(0).toUpperCase() + word.slice(1)); // Перетворюємо кожне слово у великі літери
-  return capitalizedWords.join(' '); // Об'єднуємо слова знову у рядок
-});
+// const capitalizedNames = names.map(fullName => {
+//   const words = fullName.split(' '); // Розбиваємо рядок на окремі слова
+//   const capitalizedWords = words.map(word => word.charAt(0).toUpperCase() + word.slice(1)); // Перетворюємо кожне слово у великі літери
+//   return capitalizedWords.join(' '); // Об'єднуємо слова знову у рядок
+// });
 
-console.log(capitalizedNames);
+// console.log(capitalizedNames);
 // <=============================================================================>
+// У вас є функція counter(), яка повинна повернути нове значення лічильника кожного разу, коли вона викликається. Проте, коли ви викликаєте counter() два рази, вона повертає одне і те ж значення. Ви хочете, щоб кожен виклик counter() повертав нове значення лічильника. Використовуючи замикання, напишіть функцію, яка розв'язує цю проблему.
+// let value = 0;
+// let numb = 0;
+// function counter(clalback) {
+//     clalback();
+//   return console.log(numb);
+// }
+// function foo() {
+//   value += 1;
+//   if (value % 2 !== 0) {
+//     numb += 1;
+//   }
+
+// }
+// counter(foo);
+// counter(foo);
+// counter(foo);
 
 // <=============================================================================>
+// Виправте помилки, щоб код працював
+// const product = {
+//   price: 5000,
+//   showPrice() {
+//     console.log(this.price);
+//   },
+// };
+// function callAction(action) {
+//   action();
+// }
+// callAction(product.showPrice);
 
+// correct
+
+// const product = {
+//     price: 5000,
+//     showPrice() {
+//       console.log(this.price);
+//     },
+//   };
+//   function callAction(action) {
+
+//     action();
+//   }
+
+//   callAction(product.showPrice.bind(product));
 // <=============================================================================>
 
 // <=============================================================================>
